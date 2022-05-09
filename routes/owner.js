@@ -216,7 +216,7 @@ router.post("/saveFlatOtherImages/:fId",upload.flatOther.array('otherImages',20)
         res.json({done:done});    
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -262,7 +262,7 @@ router.post("/deleteFlatOtherImages",async (req,res)=>{
         res.json({done:done});    
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -360,7 +360,7 @@ router.get("/getFlatInfo/:fId",async(req,res)=>{
         res.json({data:data});
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -396,7 +396,7 @@ router.get("/getSectors/:ownId",async (req,res)=>{
         res.json({result:data.recordset});
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -711,7 +711,7 @@ router.post("/deleteAccount", async (req,res)=>{
         res.json({done:done});   
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }

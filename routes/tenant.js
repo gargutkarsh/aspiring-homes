@@ -112,7 +112,7 @@ router.post("/sendOwnerOTP/:fId/:tId",async (req,res)=>{
         res.json({send:"1"});    
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -427,7 +427,7 @@ router.post("/deleteAccount", async (req,res)=>{
         res.json({done:done});   
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }

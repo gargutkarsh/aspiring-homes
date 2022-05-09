@@ -150,7 +150,7 @@ router.get("/getSectorStatus/:username",async (req,res)=>{
         }    
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -188,7 +188,7 @@ router.post("/createParking",async(req,res)=>{
         res.json({done:done});    
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -212,7 +212,7 @@ router.post("/saveParking",async(req,res)=>{
         res.json({done:done});    
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -263,7 +263,7 @@ router.get("/getQRList/:username",async(req,res)=>{
         res.json({data:data.recordset});    
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -369,7 +369,7 @@ router.post("/checkAvailability",async(req,res)=>{
     
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -391,7 +391,7 @@ router.get("/getSectors/:uId/:username",async(req,res)=>{
             
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -526,9 +526,9 @@ const verify = async (obj)=>{
             
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
-        //res.status(500).send("SOMETHING WENT WRONG!!");
+        res.status(500).send("SOMETHING WENT WRONG!!");
     }
     
 }

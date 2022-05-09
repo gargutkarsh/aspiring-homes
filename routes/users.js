@@ -66,7 +66,7 @@ router.post("/getFlatsList",async (req,res)=>{
         res.json({data:data});
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -82,7 +82,7 @@ router.post("/getSimilarProperties",async (req,res)=>{
         res.json({data:data});
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -106,7 +106,7 @@ router.get("/getFlatDetails/:id",async (req,res)=>{
         res.json({data:details});
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -175,7 +175,7 @@ router.post("/deleteAccount", async (req,res)=>{
         res.json({done:done});   
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
@@ -309,7 +309,7 @@ router.post("/setPropertyStatus",async (req,res)=>{
         res.json({done:done}); 
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }

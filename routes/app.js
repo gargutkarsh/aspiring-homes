@@ -31,7 +31,7 @@ router.get("/getSectors",async (req,res)=>{
         res.json({result:data.recordset});
     }
     catch(err){
-        console.warn(err);
+        //console.warn(err);
         //res.status(500).send(err.message);
         res.status(500).send("SOMETHING WENT WRONG!!");
     }
