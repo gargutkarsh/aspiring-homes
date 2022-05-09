@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>Owner Registration</title>
+  <!--favicon-->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- animate CSS-->
+  <link href="assets/css/plugins/animation.css" rel="stylesheet" type="text/css"/>
+  <!-- Icons CSS-->
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet"/>
+
+  <link href="assets/css/plugins/select2.css" rel="stylesheet"/>
+
+  <link href="assets/css/plugins/flaticon.css" rel="stylesheet"/>
+  <link href="assets/css/plugins/font-awesome.css" rel="stylesheet"/>
+  <link href="assets/css/plugins/iconfont.css" rel="stylesheet"/>
+  <link href="assets/assets/css/owner.css" rel="stylesheet"/>
+  
+</head>
+<body>
+     <div id="wrapper">
+ <div class="height-100v d-flex align-items-center justify-content-center">
+	<div class="card border-primary border-top-sm border-bottom-sm card-authentication1 mx-auto my-4 animated bounceInDown">
+		<div class="card-body">
+		 <div class="card-content p-2">
+		  <div class="card-title text-center py-3">
+              <span class="heading text-primary">Register as Owner</span> </div>
+		    <form id="registerOwner" autocomplete="off">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtName" class="sr-only">Name</label>
+                            <input type="text" id="txtName" class="form-control" placeholder="Name" name="name">
+                            <div class="form-control-position">
+                                <i class="fa fa-user"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtPhone" class="sr-only">Phone</label>
+                            <input type="text" id="txtPhone" class="form-control" placeholder="Phone" name="phone">
+                            <div class="form-control-position">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+			  <div class="row">
+                  <div class="col-sm-6">
+                      <div class="form-group">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtEmail" class="sr-only">Email</label>
+                            <input type="email" id="txtEmail" class="form-control" placeholder="Email" name="email">
+                            <div class="form-control-position">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                        <div class="form-group has-icon-left">
+                        <div class="position-relative">
+                            <label for="exampleInputName" class="sr-only">Select Sector</label>
+                            <select class="form-control single-select" id="drpSectors">
+                                <option>India</option>
+                                <option>England</option>
+                                <option>America</option>
+                                <option>China</option>
+                                <option>Australiya</option>
+                                <option>Newzeland</option>
+                                <option>Dubai</option>
+                                <option>United Kingdom</option>
+                            </select>
+                            <div class="form-control-position">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+              </div>
+              
+              <div class="form-group mb-3">
+                  <div class="input-group">
+                        <div class="input-group-prepend">
+                        <button id="btn_otp" class="btn btn-outline-primary" type="button">
+                            <i id="i_send_otp" class="fa fa-spinner fa-spin d-none"></i> 
+                            <span id="span_send_otp">Send OTP</span>
+                        </button>
+                        </div>
+                        <input id="user_otp" type="text" class="form-control form-control-2" disabled maxlength="6" placeholder="Verify Your Email"/>
+                        
+                        <div class="input-group-append">
+                        <button id="btn_verify_otp" class="btn btn-primary" disabled="" type="button">
+                            <i id="i_verified_otp" class="fas fa-check-circle d-none"></i>
+                            <i id="i_check_otp" class="fa fa-spinner fa-spin d-none"></i>
+                            <span id="span_verify_otp">Verify</span>
+                        </button>
+                        </div>
+                    </div>
+                    <label id="user_otp-error" class="d-none" style="color:#ff0000" for="user_otp">Please enter the otp</label>
+              </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtUsername" class="sr-only">Username</label>
+                            <input type="text" id="txtUsername" class="form-control" placeholder="Username" name="username">
+                            <div class="form-control-position">
+                                <i class="fa fa-user"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtPassword" class="sr-only">Password</label>
+                            <input type="password" id="txtPassword" class="form-control" placeholder="Password" name="password">
+                            <!-- <div class="form-control-position">
+                                <i class="fa fa-lock"></i>
+                            </div> -->
+                            <div id="show_password" class="form-control-position-right">
+                                <i onclick="show_password()" class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-sm-6">
+                        <div class="form-group d-none">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtHouseNo" class="sr-only">House</label>
+                            <input type="text" id="txtHouseNo" class="form-control" placeholder="House No" name="house">
+                            <div class="form-control-position">
+                                <i class="fa fa-home"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+			 
+            <div class="row mt-3">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="user-agree" name="agree" checked="" />
+                            <label for="user-agree">I agree <a href="./assets/docs/Terms and Conditions.pdf" target="_blank" class="text-primary">Term & Condition</a></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+			        <button id="btnRegister" type="submit" class="btn btn-primary btn-round waves-effect waves-light float-right">Register</button>
+			        <a href="index.html" class="btn btn-outline-primary btn-round waves-effect waves-light float-right mr-2">Cancel</a>
+                </div>
+            </div>
+            <div class="modal fade" id="saving" data-backdrop="static">
+                <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content animated fadeIn" style="background-color:transparent;border:none">
+                    
+                    <div class="modal-body" style="text-align:center">  
+                            <div class="spinner-grow" style="width: 5rem; height: 5rem;" role="status">
+                                    <span class="sr-only">saving...</span>
+                            </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+			 
+			 </form>
+		   </div>
+		  </div>
+	     </div>
+	     </div>
+    
+     <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+	</div><!--wrapper-->
+	
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/select2.min.js"></script>
+  
+  <!--Sweet Alerts -->
+  <script src="assets/js/sweetalert.min.js"></script>
+  <script src="assets/js/sweet-alert-script.js"></script>
+  <!--Form Validatin Script-->
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/additional-methods.min.js"></script>
+  <script src="assets/js/moment.min.js"></script>
+
+  <script src="assets/assets/js/owner.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from themezhub.net/rentup-live/rentup/list-layout-with-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Oct 2021 18:49:41 GMT -->
+<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Themezhub" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+    <title>Aspiring Homes</title><link rel="icon" href="../assets/img/icon3.jpg" type="image/x-icon">
+		 
+        <!-- Custom CSS -->
+        <link href="../assets/css/styles.css" rel="stylesheet">
+		<style>
+			@media (min-width: 768px){
+				
+				.property-listing.list_view .list_view_flex {
+					padding-left: 15px;
+					width: 325px;
+				}
+			}
+			@media (min-width: 991px){
+				.forHeight{
+					max-height: 965px;
+					overflow-y: scroll;
+
+				}
+				.forHeight::-webkit-scrollbar {
+					display: none;
+				}
+				.property-listing.list_view .list_view_flex {
+					padding-left: 15px;
+					width: 375px;
+				}
+			}
+			h5{
+				color:#1876f2
+			}
+            
+        </style>
+
+    </head>
+	
+    <body class="yellow-skin">
+	
+		 <!-- ============================================================== -->
+        <!-- Preloader - style you can find in spinners.css -->
+        <!-- ============================================================== -->
+       <div class="preloader"></div>
+		
+        <!-- ============================================================== -->
+        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="main-wrapper">
+		
+            <!-- ============================================================== -->
+            <!-- Top header  -->
+            <!-- ============================================================== -->
+            <!-- Start Navigation -->
+			<div class="header header-light">
+                <div class="container">
+                <nav id="navigation" class="navigation navigation-landscape">
+                    <div class="nav-header">
+                    <a class="nav-brand" href="#">
+                        <img src="../assets/img/icon3.jpg" class="logo logoImg" alt="" />
+                        <span class="logoH text-success">A</span>spiring<span class="logoH">H</span>omes
+                    </a>
+                    <div class="nav-toggle"></div>
+                    <div class="mobile_nav">
+                        
+                        <ul>
+                        <li id="user-img-mobile" class="d-none">
+                        <div class="btn-group account-drop p-0">
+                            <button type="button" class="btn btn-order-by-filt">
+                                <img src="http://localhost:5000/assets/images/defaults/user.jpg" class="userImg avater-img" alt="">
+                            </button>
+                        </div>
+                        
+                        </li>
+                        <li id="signbtn-mobile" class="add-listing">
+                        <a href="#" data-toggle="modal" data-target="#login" class="theme-cl">
+                            <i class="fas fa-sign-in-alt mr-1"></i>Sign In
+                        </a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="nav-menus-wrapper" style="transition-property: none">
+                    <span class='nav-menus-wrapper-user d-lg-none d-block'>
+                        <span id="spanMobileUser" class="d-none">
+                        <div class="btn-group account-drop p-0 mr-2">
+                            <button type="button" class="btn btn-order-by-filt">
+                                <img src="http://localhost:5000/assets/images/defaults/user.jpg" class="userImg avater-img" alt="">
+                            </button>
+                            </div>
+                        <span id="spanNameMobile" class="" style="font-weight: 600;">Hi, Kunal Agarwal</span></span>
+                        <span id="spanMobileDefault">
+                        <img src="../assets/img/icon3.jpg" class="logo logoImg" alt="" />
+                        <span class="logoH text-success">A</span>spiring<span class="logoH">H</span>omes</span>
+                    </span> 
+                    
+                    <ul class="nav-menu user-nav-menu">
+                        <li>
+                        <a href="../index.html">Home</a>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="../faq.html">FAQs</a></li>
+                        <li  class="active" id="findHomes"><a href="../find/flats.html">Flats</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+
+                    <ul class="nav-menu nav-menu-social align-to-right">
+                        <!-- <li id="usernameli" class="_my_prt_list d-none">
+                        <a id="user-name" href="#">Hi, Daniel</a>
+                        </li> -->
+                        <li id="user-img" class="d-none">
+                        <a id="user-name" href="#">Hi, Daniel</a>
+                        <div class="btn-group account-drop p-0">
+                            <button type="button" class="btn btn-order-by-filt">
+                                <img id="user" src="http://localhost:5000/assets/images/defaults/user.jpg" class="avater-img" alt="">
+                            </button>
+                        </div>
+                        <ul id="user-menu" class="nav-dropdown nav-submenu">
+                            <!-- <li><a href="index-2.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                            <li><a href="home-3.html">Home 3</a></li> -->
+                        </ul>
+                        </li>
+                        <li id="signbtn" class="add-listing">
+                        <a href="#" data-toggle="modal" data-target="#login" class="theme-cl">
+                            <i class="fas fa-sign-in-alt mr-1"></i>Sign In
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                </nav>
+                </div>
+            </div>
+			<!-- End Navigation -->
+			<div class="clearfix"></div>
+			<!-- ============================================================== -->
+			<!-- Top header  -->
+			<!-- ============================================================== -->
+			
+			<!-- ============================ All Property ================================== -->
+			<section class="gray pt-4">
+			
+				<div class="container">
+					
+					<!-- <div class="row m-0">
+						<div class="short_wraping">
+							<div class="row align-items-center">
+							
+								<div class="col-lg-3 col-md-6 col-sm-12  col-sm-6">
+									<ul class="shorting_grid">
+										<li class="list-inline-item"><a href="grid-layout-with-sidebar.html" class="active"><span class="ti-layout-grid2"></span>Grid</a></li>
+										<li class="list-inline-item"><a href="list-layout-with-sidebar.html"><span class="ti-view-list"></span>List</a></li>
+										<li class="list-inline-item"><a href="#"><span class="ti-map-alt"></span>Map</a></li>
+									</ul>
+								</div>
+						
+								<div class="col-lg-6 col-md-12 col-sm-12 order-lg-2 order-md-3 elco_bor col-sm-12">
+									<div class="shorting_pagination">
+										<div class="shorting_pagination_laft">
+											<h5>Showing 1-25 of 72 results</h5>
+										</div>
+										<div class="shorting_pagination_right">
+											<ul>
+												<li><a href="javascript:void(0);" class="active">1</a></li>
+												<li><a href="javascript:void(0);">2</a></li>
+												<li><a href="javascript:void(0);">3</a></li>
+												<li><a href="javascript:void(0);">4</a></li>
+												<li><a href="javascript:void(0);">5</a></li>
+												<li><a href="javascript:void(0);">6</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+						
+								<div class="col-lg-3 col-md-6 col-sm-12 order-lg-3 order-md-2 col-sm-6">
+									<div class="shorting-right">
+										<label>Short By:</label>
+										<div class="dropdown show">
+											<a class="btn btn-filter dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<span class="selection">Most Rated</span>
+											</a>
+											<div class="drp-select dropdown-menu">
+												<a class="dropdown-item" href="JavaScript:Void(0);">Most Rated</a>
+												<a class="dropdown-item" href="JavaScript:Void(0);">Most Viewd</a>
+												<a class="dropdown-item" href="JavaScript:Void(0);">News Listings</a>
+												<a class="dropdown-item" href="JavaScript:Void(0);">High Rated</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div> -->
+					
+					<div class="row">
+						
+						<!-- property Sidebar -->
+						<div class="col-lg-4 col-md-12 col-sm-12">
+							<div class="page-sidebar p-0">
+								<a class="filter_links" data-toggle="collapse" href="#fltbox" role="button" aria-expanded="false" aria-controls="fltbox">Open Advance Filter<i class="fa fa-sliders-h ml-2"></i></a>							
+								<div class="collapse" id="fltbox">
+									<!-- Find New Property -->
+									<div class="sidebar-widgets p-4">
+										
+										<!-- <div class="form-group">
+											<div class="input-with-icon">
+												<input type="text" class="form-control" placeholder="Neighborhood">
+												<i class="ti-search"></i>
+											</div>
+										</div> -->
+										
+										<!-- <div class="form-group">
+											<div class="input-with-icon">
+												<input type="text" class="form-control" placeholder="Location">
+												<i class="ti-location-pin"></i>
+											</div>
+										</div> -->
+										<h5 style="color: #27b737;">Location : </h5>
+										<div class="form-group">
+											<div class="simple-input">
+												<select id="ptype" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="sector-1">sector-1</option>
+													<option value="sector-2">sector-2</option>
+													<option value="sector-3">sector-3</option>
+													<option value="sector-4">sector-4</option>
+													<option value="sector-5">sector-5</option>
+												</select>
+											</div>
+										</div>
+										<hr>
+										<h5>Filters : </h5>
+										<div class="form-group">
+											<div class="simple-input">
+												<select id="propertyTo" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="buy">Buy</option>
+													<option value="rent">Rent</option>
+												</select>
+											</div>
+										</div>
+										
+										<!-- <div class="form-group">
+											<div class="simple-input">
+												<select id="price" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="1">Less Then $1000</option>
+													<option value="2">$1000 - $2000</option>
+													<option value="3">$2000 - $3000</option>
+													<option value="4">$3000 - $4000</option>
+													<option value="5">Above $5000</option>
+												</select>
+											</div>
+										</div> -->
+                                        
+										
+										<div class="form-group">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="simple-input">
+                                                        <select id="bedrooms" class="form-control" multiple>
+                                                            <option value="">&nbsp;</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="simple-input">
+                                                        <select id="bathrooms" class="form-control pl-3" multiple>
+                                                            <option value="">&nbsp;</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+											
+										</div>
+										
+										
+										<!-- <div class="form-group">
+											<div class="simple-input">
+												<select id="garage" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="1">Any Type</option>
+													<option value="2">Yes</option>
+													<option value="3">No</option>
+												</select>
+											</div>
+										</div> -->
+										
+										<div class="form-group">
+
+											<div class="simple-input">
+												<select id="bage" class="form-control">
+													<option value="">&nbsp;</option>
+                                                    <option value="0-5 Years">0 - 5 Years</option>
+                                                    <option value="5-10 Years">5 - 10 Years</option>
+                                                    <option value="10-15 Years">10 - 15 Years</option>
+                                                    <option value="15-20 Years">15 - 20 Years</option>
+                                                    <option value="20+ Years">20+ Years</option>
+												</select>
+											</div>
+										</div>
+										
+										<!-- <div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6">
+												<div class="form-group">
+													<div class="simple-input">
+														<input type="text" class="form-control" placeholder="Min Area">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6">
+												<div class="form-group">
+													<div class="simple-input">
+														<input type="text" class="form-control" placeholder="Max Area">
+													</div>
+												</div>
+											</div>
+										</div> -->
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 pt-4 pb-4">
+												<h6>Choose Area Range</h6>
+												<div class="rg-slider">
+													 <input id="areaRange" type="text" class="js-range-slider" name="my_range" value="" />
+												</div>
+											</div>
+										</div>	
+
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 pt-4 pb-4">
+												<h6>Choose Price Range</h6>
+												<div class="rg-slider">
+													 <input id="priceRange" type="text" class="js-range-slider" name="my_range" value="" />
+												</div>
+											</div>
+										</div>									
+										
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 pt-4">
+												<h6>Advance Features</h6>
+												<ul id="ul-others" class="row p-0 m-0">
+													<li class="col-lg-6 col-md-6 p-0">
+														<input id="a-1" class="checkbox-custom" name="a-1" type="checkbox">
+														<label for="a-1" class="checkbox-custom-label">Air Condition</label>
+													</li>
+													<li class="col-lg-6 col-md-6 p-0">
+														<input id="a-2" class="checkbox-custom" name="a-2" type="checkbox">
+														<label for="a-2" class="checkbox-custom-label">Bedding</label>
+													</li>
+													<li class="col-lg-6 col-md-6 p-0">
+														<input id="a-3" class="checkbox-custom" name="a-3" type="checkbox">
+														<label for="a-3" class="checkbox-custom-label">Heating</label>
+													</li>
+													<li class="col-lg-6 col-md-6 p-0">
+														<input id="a-4" class="checkbox-custom" name="a-4" type="checkbox">
+														<label for="a-4" class="checkbox-custom-label">Internet</label>
+													</li>
+													<li class="col-lg-6 col-md-6 p-0">
+														<input id="a-5" class="checkbox-custom" name="a-5" type="checkbox">
+														<label for="a-5" class="checkbox-custom-label">Microwave</label>
+													</li>
+													<li class="col-lg-6 col-md-6 p-0">
+														<input id="a-6" class="checkbox-custom" name="a-6" type="checkbox">
+														<label for="a-6" class="checkbox-custom-label">Smoking Allow</label>
+													</li>
+													<li class="col-lg-6 col-md-6 p-0">
+														<input id="a-7" class="checkbox-custom" name="a-7" type="checkbox">
+														<label for="a-7" class="checkbox-custom-label">Terrace</label>
+													</li>
+													<li class="col-lg-6 col-md-6 p-0">
+														<input id="a-8" class="checkbox-custom" name="a-8" type="checkbox">
+														<label for="a-8" class="checkbox-custom-label">Balcony</label>
+													</li>
+													<li class="col-lg-6 col-md-6 p-0">
+														<input id="a-9" class="checkbox-custom" name="a-9" type="checkbox">
+														<label for="a-9" class="checkbox-custom-label">Icon</label>
+													</li>
+                                                    <li class="col-lg-6 col-md-6 p-0">
+														<input id="a-10" class="checkbox-custom" name="a-10" type="checkbox">
+														<label for="a-10" class="checkbox-custom-label">Wi-Fi</label>
+													</li>
+                                                    <li class="col-lg-6 col-md-6 p-0">
+														<input id="a-11" class="checkbox-custom" name="a-11" type="checkbox">
+														<label for="a-11" class="checkbox-custom-label">Beach</label>
+													</li>
+                                                    <li class="col-lg-6 col-md-6 p-0">
+														<input id="a-12" class="checkbox-custom" name="a-12" type="checkbox">
+														<label for="a-12" class="checkbox-custom-label">Parking</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 pt-4">
+												<button id="btnFilter" class="btn theme-bg rounded full-width">List Filtered Flats</button>
+											</div>
+										</div>
+									
+									</div>
+								</div>
+							</div>
+							<!-- Sidebar End -->						
+						</div>
+						
+						<div class="col-lg-8 col-md-12 col-sm-12 forHeight">
+							<div id="divMap" class="property_block_wrap">
+								
+								<div class="property_block_wrap_header">
+									<h4 class="property_block_title">Location</h4>
+								</div>
+								
+								<div class="block-body">
+									<div class="map-container">
+										<iframe id="frameMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15090.183774083564!2d72.82822336977539!3d18.99565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cef0d17ace6f%3A0xba0d758b25d8b289!2sICICI%20Bank%20Curry%20Road%2C%20Mumbai-Branch%20%26%20ATM!5e0!3m2!1sen!2sin!4v1624183548415!5m2!1sen!2sin" class="full-width" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+									</div>
+
+								</div>
+								
+							</div>
+							
+							<div id="divFlatsList" class="row justify-content-center">
+						
+								<!-- Single Property -->
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+									<div class="property-listing list_view">
+										
+										<div class="listing-img-wrapper">
+											<div class="_exlio_125">For Sale</div>
+											<div class="list-img-slide">
+												<div class="click">
+													<div><a href="flat.html?id=23"><img src="../assets/img/p-1.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=23"><img src="../assets/img/p-2.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=23"><img src="../assets/img/p-3.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=23"><img src="../assets/img/p-4.png" class="img-fluid mx-auto" alt="" /></a></div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="list_view_flex">
+										
+											<div class="listing-detail-wrapper mt-1">
+												<div class="listing-short-detail-wrap">
+													<div class="_card_list_flex mb-2">
+														<div class="_card_flex_01">
+															<span class="property_types_vlix buy" style="border-radius: 0;">5 - 10 Years</span>
+															<span class="_list_blickes types">North Facing</span>
+														</div>
+														<div class="_card_flex_last">
+															<h6 class="listing-card-info-price mb-0">₹7,000</h6>
+														</div>
+													</div>
+													<div class="_card_list_flex">
+														<div class="_card_flex_01">
+															<h4 class="listing-name verified"><a href="flat.html?id=23" class="prt-link-detail">5689 Resot Relly Market, Montreal Canada, HAQC445</a></h4>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="price-features-wrapper">
+												<div class="list-fx-features">
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/bed.svg" width="13" alt="" /></div>3 Beds
+													</div>
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/bathtub.svg" width="13" alt="" /></div>1 Bath
+													</div>
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/move.svg" width="13" alt="" /></div>800 sqft
+													</div>
+												</div>
+											</div>
+											
+											<div class="listing-detail-footer">
+												<div class="footer-first">
+													<div class="foot-rates">
+														<span class="elio_rate good">4.2</span>
+														<div class="_rate_stio">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</div>
+													</div>
+												</div>
+												<div class="footer-flex">
+													<a href="property-detail.html" class="prt-view">View Detail</a>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								<!-- End Single Property -->
+								
+								<!-- Single Property -->
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+									<div class="property-listing list_view">
+										
+										<div class="listing-img-wrapper">
+											<div class="_exlio_125">For Rent</div>
+											<div class="list-img-slide">
+												<div class="click">
+													<div><a href="flat.html?id=24"><img src="../assets/img/p-4.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=24"><img src="../assets/img/p-5.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=24"><img src="../assets/img/p-6.png" class="img-fluid mx-auto" alt="" /></a></div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="list_view_flex">
+										
+											<div class="listing-detail-wrapper mt-1">
+												<div class="listing-short-detail-wrap">
+													<div class="_card_list_flex mb-2">
+														<div class="_card_flex_01">
+															<span class="_list_blickes _netork">7 Network</span>
+															<span class="_list_blickes types">Condos</span>
+														</div>
+														<div class="_card_flex_last">
+															<h6 class="listing-card-info-price mb-0">₹10,500</h6>
+														</div>
+													</div>
+													<div class="_card_list_flex">
+														<div class="_card_flex_01">
+															<h4 class="listing-name verified"><a href="flat.html?id=24" class="prt-link-detail">9632 New Green Garden, Huwai Denever USA, AWE789O</a></h4>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="price-features-wrapper">
+												<div class="list-fx-features">
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/bed.svg" width="13" alt="" /></div>4 Beds
+													</div>
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/bathtub.svg" width="13" alt="" /></div>2 Bath
+													</div>
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/move.svg" width="13" alt="" /></div>1000 sqft
+													</div>
+												</div>
+											</div>
+											
+											<div class="listing-detail-footer">
+												<div class="footer-first">
+													<div class="foot-rates">
+														<span class="elio_rate perfect">4.7</span>
+														<div class="_rate_stio">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</div>
+													</div>
+												</div>
+												<div class="footer-flex">
+													<a href="property-detail.html" class="prt-view">View Detail</a>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								<!-- End Single Property -->
+								
+								<!-- Single Property -->
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+									<div class="property-listing list_view">
+										
+										<div class="listing-img-wrapper">
+											<div class="_exlio_125">For Sale</div>
+											<div class="list-img-slide">
+												<div class="click">
+													<div><a href="flat.html?id=25"><img src="../assets/img/p-7.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=25"><img src="../assets/img/p-8.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=25"><img src="../assets/img/p-9.png" class="img-fluid mx-auto" alt="" /></a></div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="list_view_flex">
+										
+											<div class="listing-detail-wrapper mt-1">
+												<div class="listing-short-detail-wrap">
+													<div class="_card_list_flex mb-2">
+														<div class="_card_flex_01">
+															<span class="_list_blickes _netork">8 Network</span>
+															<span class="_list_blickes types">Apartment</span>
+														</div>
+														<div class="_card_flex_last">
+															<h6 class="listing-card-info-price mb-0">₹8,700</h6>
+														</div>
+													</div>
+													<div class="_card_list_flex">
+														<div class="_card_flex_01">
+															<h4 class="listing-name verified"><a href="flat.html?id=25" class="prt-link-detail">8512 Red Reveals Market, Montreal Canada, SHQT45O</a></h4>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="price-features-wrapper">
+												<div class="list-fx-features">
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/bed.svg" width="13" alt="" /></div>5 Beds
+													</div>
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/bathtub.svg" width="13" alt="" /></div>2 Bath
+													</div>
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/move.svg" width="13" alt="" /></div>900 sqft
+													</div>
+												</div>
+											</div>
+											
+											<div class="listing-detail-footer">
+												<div class="footer-first">
+													<div class="foot-rates">
+														<span class="elio_rate good">4.3</span>
+														<div class="_rate_stio">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</div>
+													</div>
+												</div>
+												<div class="footer-flex">
+													<a href="property-detail.html" class="prt-view">View Detail</a>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								<!-- End Single Property -->
+								
+								<!-- Single Property -->
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+									<div class="property-listing list_view">
+										
+										<div class="listing-img-wrapper">
+											<div class="_exlio_125">For Rent</div>
+											<div class="list-img-slide">
+												<div class="click">
+													<div><a href="flat.html?id=26"><img src="../assets/img/p-10.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=26"><img src="../assets/img/p-11.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=26"><img src="../assets/img/p-12.png" class="img-fluid mx-auto" alt="" /></a></div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="list_view_flex">
+										
+											<div class="listing-detail-wrapper mt-1">
+												<div class="listing-short-detail-wrap">
+													<div class="_card_list_flex mb-2">
+														<div class="_card_flex_01">
+															<span class="_list_blickes _netork">10 Network</span>
+															<span class="_list_blickes types">Villas</span>
+														</div>
+														<div class="_card_flex_last">
+															<h6 class="listing-card-info-price mb-0">₹9,100</h6>
+														</div>
+													</div>
+													<div class="_card_list_flex">
+														<div class="_card_flex_01">
+															<h4 class="listing-name verified"><a href="flat.html?id=26" class="prt-link-detail">7298 Rani Market Near Saaket, Henever Canada, QWUI98</a></h4>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="price-features-wrapper">
+												<div class="list-fx-features">
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/bed.svg" width="13" alt="" /></div>5 Beds
+													</div>
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/bathtub.svg" width="13" alt="" /></div>2 Bath
+													</div>
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/move.svg" width="13" alt="" /></div>900 sqft
+													</div>
+												</div>
+											</div>
+											
+											<div class="listing-detail-footer">
+												<div class="footer-first">
+													<div class="foot-rates">
+														<span class="elio_rate perfect">4.8</span>
+														<div class="_rate_stio">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</div>
+													</div>
+												</div>
+												<div class="footer-flex">
+													<a href="property-detail.html" class="prt-view">View Detail</a>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								<!-- End Single Property -->
+								
+								<!-- Single Property -->
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+									<div class="property-listing list_view">
+										
+										<div class="listing-img-wrapper">
+											<div class="_exlio_125">For Sale</div>
+											<div class="list-img-slide">
+												<div class="click">
+													<div><a href="flat.html?id=26"><img src="../assets/img/p-13.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=26"><img src="../assets/img/p-14.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=26"><img src="../assets/img/p-15.png" class="img-fluid mx-auto" alt="" /></a></div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="list_view_flex">
+										
+											<div class="listing-detail-wrapper mt-1">
+												<div class="listing-short-detail-wrap">
+													<div class="_card_list_flex mb-2">
+														<div class="_card_flex_01">
+															<span class="_list_blickes _netork">4 Network</span>
+															<span class="_list_blickes types">Offices</span>
+														</div>
+														<div class="_card_flex_last">
+															<h6 class="listing-card-info-price mb-0">₹7,400</h6>
+														</div>
+													</div>
+													<div class="_card_list_flex">
+														<div class="_card_flex_01">
+															<h4 class="listing-name verified"><a href="flat.html?id=26" class="prt-link-detail">5629 Rani Market Near Saaket, Henever Canada, QWUI98</a></h4>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="price-features-wrapper">
+												<div class="list-fx-features">
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/bed.svg" width="13" alt="" /></div>4 Beds
+													</div>
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/bathtub.svg" width="13" alt="" /></div>2 Bath
+													</div>
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/move.svg" width="13" alt="" /></div>810 sqft
+													</div>
+												</div>
+											</div>
+											
+											<div class="listing-detail-footer">
+												<div class="footer-first">
+													<div class="foot-rates">
+														<span class="elio_rate good">4.5</span>
+														<div class="_rate_stio">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</div>
+													</div>
+												</div>
+												<div class="footer-flex">
+													<a href="property-detail.html" class="prt-view">View Detail</a>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								<!-- End Single Property -->
+								
+								<!-- Single Property -->
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+									<img src="../assets/img/no record found.png" class="img-fluid mx-auto" alt="" />
+									<!-- <div class="property-listing list_view">
+										
+										<div class="listing-img-wrapper">
+											<div class="_exlio_125">For Rent</div>
+											<div class="list-img-slide">
+												<div class="click">
+													<div><a href="flat.html?id=27"><img src="../assets/img/p-16.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=27"><img src="../assets/img/p-17.png" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="flat.html?id=27"><img src="../assets/img/p-18.png" class="img-fluid mx-auto" alt="" /></a></div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="list_view_flex">
+										
+											<div class="listing-detail-wrapper mt-1">
+												<div class="listing-short-detail-wrap">
+													<div class="_card_list_flex mb-2">
+														<div class="_card_flex_01">
+															<span class="_list_blickes _netork">4 Network</span>
+															<span class="_list_blickes types">Apartment</span>
+														</div>
+														<div class="_card_flex_last">
+															<h6 class="listing-card-info-price mb-0">$9,700</h6>
+														</div>
+													</div>
+													<div class="_card_list_flex">
+														<div class="_card_flex_01">
+															<h4 class="listing-name verified"><a href="flat.html?id=27" class="prt-link-detail">3297 Rani Market Near Saaket, Henever Canada, QWUI98</a></h4>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="price-features-wrapper">
+												<div class="list-fx-features">
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/bed.svg" width="13" alt="" /></div>6 Beds
+													</div>
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/bathtub.svg" width="13" alt="" /></div>3 Bath
+													</div>
+													<div class="listing-card-info-icon">
+														<div class="inc-fleat-icon"><img src="../assets/img/move.svg" width="13" alt="" /></div>1200 sqft
+													</div>
+												</div>
+											</div>
+											
+											<div class="listing-detail-footer">
+												<div class="footer-first">
+													<div class="foot-rates">
+														<span class="elio_rate perfect">4.8</span>
+														<div class="_rate_stio">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</div>
+													</div>
+												</div>
+												<div class="footer-flex">
+													<a href="property-detail.html" class="prt-view">View Detail</a>
+												</div>
+											</div>
+										</div>
+										
+									</div> -->
+								</div>
+								<!-- End Single Property -->
+								
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>	
+			</section>
+			<!-- ============================ All Property ================================== -->
+			
+			<!-- ============================ Call To Action ================================== -->
+			<section class="theme-bg call_action_wrap-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							
+							<div class="call_action_wrap">
+								<div class="call_action_wrap-head">
+									<h3>Do You Have Questions ?</h3>
+									<span>We'll help you to grow your career and growth.</span>
+								</div>
+								<a href="#" class="btn btn-call_action_wrap">Contact Us Today</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ============================ Call To Action End ================================== -->
+			
+			<!-- ============================ Footer Start ================================== -->
+			<footer class="dark-footer skin-dark-footer style-2">
+				<div class="footer-middle">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-lg-5 col-md-5">
+								<div class="footer_widget">
+									<img src="assets/img/logo-light.png" class="img-footer small mb-2" alt="" />
+									<h4 class="extream mb-3">Do you need help with<br>anything?</h4>
+									<p>Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month</p>
+									<div class="foot-news-last">
+										<div class="input-group">
+										  <input type="text" class="form-control" placeholder="Email Address">
+											<div class="input-group-append">
+												<button type="button" class="input-group-text theme-bg b-0 text-light">Subscribe</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-6 col-md-7 ml-auto">
+								<div class="row">
+								
+									<div class="col-lg-4 col-md-4">
+										<div class="footer_widget">
+											<h4 class="widget_title">Layouts</h4>
+											<ul class="footer-menu">
+												<li><a href="#">Home Page</a></li>
+												<li><a href="#">About Page</a></li>
+												<li><a href="#">Service Page</a></li>
+												<li><a href="#">Property Page</a></li>
+												<li><a href="#">Contact Page</a></li>
+												<li><a href="#">Single Blog</a></li>
+											</ul>
+										</div>
+									</div>
+											
+									<div class="col-lg-4 col-md-4">
+										<div class="footer_widget">
+											<h4 class="widget_title">All Sections</h4>
+											<ul class="footer-menu">
+												<li><a href="#">Headers<span class="new">New</span></a></li>
+												<li><a href="#">Features</a></li>
+												<li><a href="#">Attractive<span class="new">New</span></a></li>
+												<li><a href="#">Testimonials</a></li>
+												<li><a href="#">Videos</a></li>
+												<li><a href="#">Footers</a></li>
+											</ul>
+										</div>
+									</div>
+							
+									<div class="col-lg-4 col-md-4">
+										<div class="footer_widget">
+											<h4 class="widget_title">Company</h4>
+											<ul class="footer-menu">
+												<li><a href="#">About</a></li>
+												<li><a href="#">Blog</a></li>
+												<li><a href="#">Pricing</a></li>
+												<li><a href="#">Affiliate</a></li>
+												<li><a href="#">Login</a></li>
+												<li><a href="#">Changelog<span class="update">Update</span></a></li>
+											</ul>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-12 col-md-12 text-center">
+								<p class="mb-0">© 2021 RentUP. Designd By <a href="https://themezhub.com/">ThemezHub</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- ============================ Footer End ================================== -->
+			
+			<!-- Log In Modal -->
+			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal" aria-hidden="true">
+				<div class="modal-dialog modal-xl login-pop-form" role="document">
+					<div class="modal-content overli" id="registermodal">
+						<div class="modal-body p-0">
+							<div class="resp_log_wrap">
+								<div class="resp_log_thumb" style="background:url(../assets/img/tag.png) no-repeat;"></div>
+								<div class="resp_log_caption">
+									<span class="mod-close" data-dismiss="modal" aria-hidden="true"><i class="ti-close"></i></span>
+									<div class="edlio_152">
+										<ul class="nav nav-pills tabs_system center" id="pills-tab" role="tablist">
+										  <li class="nav-item">
+											<a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true"><i class="fas fa-sign-in-alt mr-2"></i>Login</a>
+										  </li>
+										  <li class="nav-item">
+											<a class="nav-link" id="pills-signup-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-signup" aria-selected="false"><i class="fas fa-user-plus mr-2"></i>Register</a>
+										  </li>
+										  <li class="nav-item">
+											<a class="nav-link d-none" id="pills-verify-tab" data-toggle="pill" href="#pills-verify" role="tab" aria-controls="pills-verify" aria-selected="false"><i class="fas fa-user-check mr-2"></i>verify</a>
+										  </li>
+										</ul>
+									</div>
+									<div class="tab-content" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+											<div class="login-form">
+												<form>
+												
+													<div class="form-group">
+														<label>User Name</label>
+														<div class="input-with-icon">
+															<input id="txtUsername" type="text" class="form-control">
+															<i class="ti-user"></i>
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label>Password</label>
+														<div class="input-with-icon">
+															<input id="txtPassword" type="password" class="form-control">
+															<i class="ti-unlock"></i>
+														</div>
+													</div>
+													<div id="divWC" class="form-group d-none">
+                              <label class="text-danger">Wrong Credentials</label>
+                          </div>
+													<div id="divIA" class="form-group d-none">
+                              <label class="text-warning">Your Account is on hold or under Verification Please Wait</label>
+                          </div>
+													<div class="form-group d-none">
+														<div class="eltio_ol9">
+															<div class="eltio_k1">
+																<input id="dd" class="checkbox-custom" name="dd" type="checkbox">
+																<label for="dd" class="checkbox-custom-label">Remember Me</label>
+															</div>	
+															<div class="eltio_k2">
+																<a href="#">Lost Your Password?</a>
+															</div>	
+														</div>
+													</div>
+													
+													<div class="form-group mt-5 text-center">
+														<button id="btnLogin" type="submit" class="btn btn-md full-width pop-login">Login</button>
+                                                        <a id="#" href="../user.html" class="mt-2" style="color: #007bff;"><u>Don't have an account? Create Account</u></a>
+													</div>
+												
+												</form>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
+											<div class="login-form">
+												<form>
+												
+                          <div class="form-group">
+														<label class="my-2 ml-3 text-center" style="font-size:27px;">Welcome On Our Portal</label>
+														
+													</div>
+
+													<div class="form-group">
+														<a href="../president.html" class="btn btn-md full-width pop-login">Register as President</a>
+													</div>
+
+													<div class="form-group">
+														<a href="../owner.html" class="btn btn-md full-width pop-login">Register as Owner</a>
+													</div>
+													<div class="form-group">
+                            <div class="row">
+                              <div class="col-6"><a href="../tenant.html" class="btn btn-md full-width pop-login">Register as Tenant</a></div>
+                              <div class="col-6"><a href="../user.html" id="register_user" class="btn btn-md full-width pop-login">Register as User</a></div>
+                            </div>
+														
+													</div>
+												
+												</form>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="pills-verify" role="tabpanel" aria-labelledby="pills-verify-tab">
+											<div class="login-form">
+												<form>
+												
+                          <div class="form-group">
+                            <div class="position-relative has-icon-right">
+                              <label for="txtEmail" class="sr-only">Email</label>
+                              <span id="spanName" hidden></span>
+                              <input type="email" disabled id="txtEmail" class="form-control" placeholder="Email" name="email">
+                              <div class="form-control-position">
+                                  <i class="fa fa-envelope d-none"></i>
+                              </div>
+                            </div>
+                            </div>
+                          <div class="form-group mb-3">
+                          <div class="input-group">
+                                <div class="input-group-prepend">
+                                <button id="btnotp" class="btn btn-outline-success" type="button">
+                                    <i id="i_sendotp" class="fa fa-spinner fa-spin d-none"></i> 
+                                    <span id="span_sendotp">Send OTP</span>
+                                </button>
+                                </div>
+                                <input id="userotp" type="text" class="form-control form-control-2" disabled maxlength="6" placeholder="Verify Your Email"/>
+                                
+                                <div class="input-group-append">
+                                <button id="btn_verifyotp" class="btn btn-success" disabled="" type="button">
+                                    <i id="i_verifiedotp" class="fas fa-check-circle d-none"></i>
+                                    <i id="i_checkotp" class="fa fa-spinner fa-spin d-none"></i>
+                                    <span id="span_verifyotp">Verify</span>
+                                </button>
+                                </div>
+                            </div>
+                            <label id="userotp-error" class="d-none" style="color:#ff0000" for="userotp">Please enter the otp</label>
+                          </div>
+													<div class="form-group mt-5">
+														<button id="btnContinueVerify" type="submit" disabled class="btn btn-md full-width pop-login">Continue</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Modal -->
+			
+			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+			
+
+		</div>
+		<!-- ============================================================== -->
+		<!-- End Wrapper -->
+		<!-- ============================================================== -->
+
+		<!-- ============================================================== -->
+		<!-- All Jquery -->
+		<!-- ============================================================== -->
+		<script src="assets/js/valid.js"></script>
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/popper.min.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/ion.rangeSlider.min.js"></script>
+		<script src="../assets/js/select2.min.js"></script>
+		<script src="../assets/js/jquery.magnific-popup.min.js"></script>
+
+		
+
+		<script src="../assets/js/slick.js"></script>
+		<script src="../assets/js/slider-bg.js"></script>
+		<script src="../assets/js/lightbox.js"></script> 
+		<script src="../assets/js/imagesloaded.js"></script>
+		<script src="../assets/js/daterangepicker.js"></script>
+		        
+		<script src="../assets/js/custom.js"></script>
+		
+
+        <script src="../assets/assets/js/nav.js"></script>
+        <script src="assets/js/flats.js"></script>
+		<!-- ============================================================== -->
+		<!-- This page plugins -->
+		<!-- ============================================================== -->
+		
+
+	</body>
+
+<!-- Mirrored from themezhub.net/rentup-live/rentup/list-layout-with-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Oct 2021 18:49:41 GMT -->
+</html>

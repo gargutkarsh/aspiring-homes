@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from themezhub.net/rentup-live/rentup/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Oct 2021 18:49:45 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Themezhub" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <script src="assets/js/valid.js"></script>
+    <title>Aspiring Homes</title><link rel="icon" href="../assets/img/icon3.jpg" type="image/x-icon">
+    <link href="../assets/css/plugins/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="../assets/css/styles.css" rel="stylesheet" />
+    
+  <link href="../assets/css/plugins/select2.css" rel="stylesheet"/>
+
+    <style>
+      .spanactive{
+        font-size: 10px;border-radius: 10px;
+      }
+      .area{
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        border:1px solid #dedede;
+      }
+
+      .table tr th, .table tr td{
+        padding: 2px 4px;
+      }
+      .optionbtn{
+        background:transparent;color:white;border:none;height:50px;cursor: pointer;
+      }
+      
+      .optionbtn:disabled{
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+
+  <body class="yellow-skin">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader"></div>
+
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+      <!-- ============================================================== -->
+      <!-- Top header  -->
+      <!-- ============================================================== -->
+      <!-- Start Navigation -->
+      <div class="header header-light">
+        <div class="container">
+          <nav id="navigation" class="navigation navigation-landscape">
+            <div class="nav-header">
+              <a class="nav-brand" href="#">
+                <img src="../assets/img/icon3.jpg" class="logo logoImg" alt="" />
+                 <span class="logoH text-success">A</span>spiring<span class="logoH">H</span>omes
+              </a>
+              <div class="nav-toggle"></div>
+              <div class="mobile_nav">
+                
+                <ul>
+                  <li id="user-img-mobile" class="d-none">
+                  <div class="btn-group account-drop p-0">
+                    <button type="button" class="btn btn-order-by-filt">
+                        <img src="http://localhost:5000/assets/images/defaults/user.jpg" class="userImg avater-img" alt="">
+                    </button>
+                  </div>
+                  
+                </li>
+                <li id="signbtn-mobile" class="add-listing">
+                  <a href="#" data-toggle="modal" data-target="#login" class="theme-cl">
+                    <i class="fas fa-sign-in-alt mr-1"></i>Sign In
+                  </a>
+                </li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-menus-wrapper" style="transition-property: none">
+              <span class='nav-menus-wrapper-user d-lg-none d-block'>
+                <span id="spanMobileUser" class="d-none">
+                  <div class="btn-group account-drop p-0 mr-2">
+                      <button type="button" class="btn btn-order-by-filt">
+                          <img src="http://localhost:5000/assets/images/defaults/user.jpg" class="userImg avater-img" alt="">
+                      </button>
+                    </div>
+                  <span id="spanNameMobile" class="" style="font-weight: 600;">Hi, Kunal Agarwal</span></span>
+                <span id="spanMobileDefault">
+                 <img src="../assets/img/icon3.jpg" class="logo logoImg" alt="" />
+                  <span class="logoH text-success">A</span>spiring<span class="logoH">H</span>omes</span>
+              </span> 
+              
+              <ul class="nav-menu user-nav-menu">
+                <li class="active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+
+              <ul class="nav-menu nav-menu-social align-to-right">
+                <!-- <li id="usernameli" class="_my_prt_list d-none">
+                  <a id="user-name" href="#">Hi, Daniel</a>
+                </li> -->
+                <li id="user-img" class="d-none">
+                  <a id="user-name" href="#">Hi, Daniel</a>
+                  <div class="btn-group account-drop p-0">
+                    <button type="button" class="btn btn-order-by-filt">
+                        <img id="user" src="http://localhost:5000/assets/images/defaults/user.jpg" class="avater-img" alt="">
+                    </button>
+                  </div>
+                  <ul id="user-menu" class="nav-dropdown nav-submenu">
+                    <!-- <li><a href="index-2.html">Home 1</a></li>
+                    <li><a href="home-2.html">Home 2</a></li>
+                    <li><a href="home-3.html">Home 3</a></li> -->
+                  </ul>
+                </li>
+                <li id="signbtn" class="add-listing">
+                  <a href="#" data-toggle="modal" data-target="#login" class="theme-cl">
+                    <i class="fas fa-sign-in-alt mr-1"></i>Sign In
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- End Navigation -->
+      <div class="clearfix"></div>
+      <!-- ============================================================== -->
+      <!-- Top header  -->
+      <!-- ============================================================== -->
+
+      <!-- ============================ Page Title Start================================== -->
+      <div
+        class="page-title"
+        style="background: #f4f4f4 url(../assets/img/slider-1.jpg)"
+        data-overlay="5"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="breadcrumbs-wrap">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <span class="">Administrator</span> Dashboard
+                  </li>
+                </ol>
+                <h2 class="breadcrumb-title">Hello <span id="headName" class="headName text-success">Kunal Agarwal</span>, Welcome</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ============================ Page Title End ================================== -->
+
+      <!-- ============================ User Dashboard ================================== -->
+      <section class="gray pt-5 pb-5">
+        <div class="container-fluid">
+          <div class="row">
+            
+            <div class="col-lg-3 d-none d-lg-block">
+              <div class="property_dashboard_navbar">
+                <div class="dash_user_avater">
+                  <img id="headProfile" src="../assets/img/user-3.jpg" class="img-fluid avater"alt=""/>
+                  <h4 class="headName">Adam Harshvardhan</h4>
+                  <span>Administrator</span>
+                </div>
+
+                <div class="dash_user_menues">
+                  <ul>
+                    <li class="active">
+                      <a href="dashboard.html">
+                        <i class="fa fa-tachometer-alt"></i>
+                        Dashboard<span class="notti_coun style-1 d-none">4</span></a>
+                    </li>
+                    <li>
+                      <a href="my-profile.html"><i class="fa fa-user-tie"></i>My Profile</a>
+                    </li>
+                    <li class="d-none">
+                      <a href="bookmark-list.html"><i class="fa fa-bookmark"></i>Saved Property
+                        <span class="notti_coun style-2">7</span></a>
+                    </li>
+                    <li class="d-none">
+                      <a href="my-property.html"
+                        ><i class="fa fa-tasks"></i>My Properties</a
+                      >
+                    </li>
+                    <li class="d-none">
+                      <a href="messages.html"
+                        ><i class="fa fa-envelope"></i>Messages<span
+                          class="notti_coun style-3"
+                          >3</span
+                        ></a
+                      >
+                    </li>
+                    <li class="d-none">
+                      <a href="choose-package.html"
+                        ><i class="fa fa-gift"></i>Choose Package<span
+                          class="expiration"
+                          >10 days left</span
+                        ></a
+                      >
+                    </li>
+                    <li class="d-none">
+                      <a href="submit-property-dashboard.html"
+                        ><i class="fa fa-pen-nib"></i>Submit New Property</a
+                      >
+                    </li>
+                    <li>
+                      <a href="change-password.html"
+                        ><i class="fa fa-unlock-alt"></i>Change Password</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                 <div class="dash_user_footer">
+                  <ul>
+                    <li>
+                      <a href="javascript:logout();"><i class="fa fa-power-off"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-comment"></i></a>
+                    </li>
+                    <li>
+                      <a href="my-profile.html"><i class="fa fa-cog"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-9">
+              <div class="dashboard-body">
+                
+
+                <div class="row">
+                  
+
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        <h4 class="mb-0">President Requests</h4>
+                      </div>
+                      <div class="card-body py-3 px-3">
+                        <label>Choose Sector</label>
+                        <select onchange="javascript:bindtblRequests()" class="form-control single-select" id="drpSectors"></select>
+
+                          
+
+                        <div class="table-responsive mt-3">
+                          <table id="tblRequests" class="table table-bordered table-hover">
+                            <!-- <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Date</th>
+                                <th>info</th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td>Kunal<span class="spanactive text-white px-1 ml-2 bg-success">Active</span></td>
+                                <td>9306066540</td>
+                                <td>04/10/2013</td>
+                                <td><i class='fas fa-info-circle'></i></td>
+                              </tr>
+
+                              
+                            </tbody> -->
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        <h4 class="mb-0">Request Info</h4>
+                      </div>
+                      <div class="card-body p-3">
+                        <div class="row">
+                          <span id="spancId" hidden></span>
+                          <div class="col-12 mb-3">Status: <span id="spanStatus"></span></div>
+                          <div class="col-6">Sector: <span id="spanSector"></span></div>
+                          <div class="col-6">Date: <span id="spanDate"></span></div>
+                          <div class="col-6">Name: <span id="spanName"></span></div>
+                          <div class="col-6">Phone: <span id="spanPhone"></span></div>
+                          <div class="col-12">Email: <span id="spanEmail"></span></div>
+                          
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-6">
+                            <img id="imgFront" src="" class="area" alt="">
+                          </div>
+                          <div class="col-6">
+                            <img id="imgBack" src="" class="area" alt="">
+                          </div>
+
+                          </div>
+
+                          <div class="row mt-3">
+                            <div class="col-12">
+                            <label>
+                              Dismissing Notice/Reason
+                            </label>
+                            <textarea name="" id="txtDismissed" class="form-control" cols="30" rows="10"></textarea>
+
+                            </div>
+                          </div>
+                      </div>
+                           <div class="dash_user_footer">
+                            <ul>
+                              <li>
+                                <button id="btndeallot" class="optionbtn" onclick="deAllot()">
+                                  <i id="ideallot" class="fa fa-spinner fa-spin d-none"></i>
+                                  De-allot
+                                </button>
+                              </li>
+                              <li>
+                                <button id="btndismiss" class="optionbtn" onclick="dismissed()">
+                                  <i id="idismiss" class="fa fa-spinner fa-spin d-none"></i>
+                                  Dismissed</button>
+                              </li>
+                              <li>
+                                <button id="btnallot" class="optionbtn" onclick="allot()">
+                                  <i id="iallot" class="fa fa-spinner fa-spin d-none"></i>Allot</button>
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <!-- row -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================ User Dashboard End ================================== -->
+
+      <!-- ============================ Call To Action ================================== -->
+      <section class="theme-bg call_action_wrap-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="call_action_wrap">
+                <div class="call_action_wrap-head">
+                  <h3>Do You Have Questions ?</h3>
+                  <span>We'll help you to grow your career and growth.</span>
+                </div>
+                <a href="../contact.html" class="btn btn-call_action_wrap">Contact Us Today</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================ Call To Action End ================================== -->
+
+      <!-- ============================ Footer Start ================================== -->
+      <footer class="dark-footer skin-dark-footer style-2">
+        <div class="footer-middle">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-md-5">
+                <div class="footer_widget">
+                  <img src="../assets/img/icon3.jpg" class="img-footer small mb-2" alt="" style="height: 50px;"/>
+                  <span class="text-white" style="font-size: 20px;"><span class="logoH text-success">A</span>spiring<span class="logoH">H</span>omes</span>
+                  <h4 class="extream mb-3">
+                    Do you need help with<br />anything?
+                  </h4>
+                  <p>
+                    Receive updates, hot deals, tutorials, discounts sent
+                    straignt in your inbox every month
+                  </p>
+                  <div class="foot-news-last">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Email Address"
+                      />
+                      <div class="input-group-append">
+                        <button
+                          type="button"
+                          class="input-group-text theme-bg b-0 text-light"
+                        >
+                          Subscribe
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-7 ml-auto">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4">
+                    <div class="footer_widget">
+                      <h4 class="widget_title">Layouts</h4>
+                      <ul class="footer-menu">
+                        <li><a href="#">Home Page</a></li>
+                        <li><a href="#">About Page</a></li>
+                        <li><a href="#">Service Page</a></li>
+                        <li><a href="#">Property Page</a></li>
+                        <li><a href="#">Contact Page</a></li>
+                        <li><a href="#">Single Blog</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4">
+                    <div class="footer_widget">
+                      <h4 class="widget_title">All Sections</h4>
+                      <ul class="footer-menu">
+                        <li>
+                          <a href="#">Headers<span class="new">New</span></a>
+                        </li>
+                        <li><a href="#">Features</a></li>
+                        <li>
+                          <a href="#">Attractive<span class="new">New</span></a>
+                        </li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Footers</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4">
+                    <div class="footer_widget">
+                      <h4 class="widget_title">Company</h4>
+                      <ul class="footer-menu">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li>
+                          <a href="#"
+                            >Changelog<span class="update">Update</span></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12 col-md-12 text-center">
+                <p class="mb-0">
+                  © 2021 AspiringHomes. Designd By
+                  <a href="#">Prantik Biswas, Kunal, Utkarsh, Akash</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- ============================ Footer End ================================== -->
+
+      <!-- Log In Modal -->
+      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal" aria-hidden="true">
+				<div class="modal-dialog modal-xl login-pop-form" role="document">
+					<div class="modal-content overli" id="registermodal">
+						<div class="modal-body p-0">
+							<div class="resp_log_wrap">
+								<div class="resp_log_thumb" style="background:url(assets/img/log.jpg) no-repeat;"></div>
+								<div class="resp_log_caption">
+									<span class="mod-close" data-dismiss="modal" aria-hidden="true"><i class="ti-close"></i></span>
+									<div class="edlio_152">
+										<ul class="nav nav-pills tabs_system center" id="pills-tab" role="tablist">
+										  <li class="nav-item">
+											<a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true"><i class="fas fa-sign-in-alt mr-2"></i>Login</a>
+										  </li>
+										  <li class="nav-item">
+											<a class="nav-link" id="pills-signup-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-signup" aria-selected="false"><i class="fas fa-user-plus mr-2"></i>Register</a>
+										  </li>
+										</ul>
+									</div>
+									<div class="tab-content" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+											<div class="login-form">
+												<form>
+												
+													<div class="form-group">
+														<label>User Name</label>
+														<div class="input-with-icon">
+															<input id="txtUsername" type="text" class="form-control">
+															<i class="ti-user"></i>
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label>Password</label>
+														<div class="input-with-icon">
+															<input id="txtPassword" type="password" class="form-control">
+															<i class="ti-unlock"></i>
+														</div>
+													</div>
+													<div id="divWC" class="form-group d-none">
+                              <label class="text-danger">Wrong Credentials</label>
+                          </div>
+													<div id="divIA" class="form-group d-none">
+                              <label class="text-warning">Your Account is on hold or under Verification Please Wait</label>
+                          </div>
+													<div class="form-group d-none">
+														<div class="eltio_ol9">
+															<div class="eltio_k1">
+																<input id="dd" class="checkbox-custom" name="dd" type="checkbox">
+																<label for="dd" class="checkbox-custom-label">Remember Me</label>
+															</div>	
+															<div class="eltio_k2">
+																<a href="#">Lost Your Password?</a>
+															</div>	
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<button id="btnLogin" type="submit" class="btn btn-md full-width pop-login">Login</button>
+													</div>
+												
+												</form>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
+											<div class="login-form">
+												<form>
+												
+                          <div class="form-group">
+														<label class="my-5 ml-3 text-center text-success" style="font-size:27px;">Welcome to our web portal</label>
+														
+													</div>
+
+													<div class="form-group">
+														<a href="president.html" class="btn btn-md full-width pop-login">Register as President</a>
+													</div>
+
+													<div class="form-group">
+														<a href="owner.html" class="btn btn-md full-width pop-login">Register as Owner</a>
+													</div>
+												
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+      <!-- End Modal -->
+
+      <a id="back2Top" class="top-scroll" title="Back to top" href="#"
+        ><i class="ti-arrow-up"></i
+      ></a>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/ion.rangeSlider.min.js"></script>
+    <script src="../assets/js/select2.min.js"></script>
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/slider-bg.js"></script>
+    <script src="../assets/js/lightbox.js"></script>
+    <script src="../assets/js/imagesloaded.js"></script>
+    <script src="../assets/js/daterangepicker.js"></script>
+    <script src="../assets/js/custom.js"></script>
+
+    
+
+    <!-- Morris.js charts
+    <script src="../assets/js/raphael.min.js"></script>
+    <script src="../assets/js/morris.min.js"></script>
+
+     Custom Morrisjs JavaScript
+    <script src="../assets/js/morris.js"></script> -->
+
+    <script src="../assets/js/moment.min.js"></script>
+    <script src="../assets/assets/js/nav.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+  </body>
+
+  <!-- Mirrored from themezhub.net/rentup-live/rentup/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Oct 2021 18:49:47 GMT -->
+</html>

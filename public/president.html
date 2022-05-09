@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>President Registration</title>
+  <!--favicon-->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- animate CSS-->
+  <link href="assets/css/plugins/animation.css" rel="stylesheet" type="text/css"/>
+  <!-- Icons CSS-->
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet"/>
+
+  <link href="assets/css/plugins/select2.css" rel="stylesheet"/>
+
+  <link href="assets/css/plugins/flaticon.css" rel="stylesheet"/>
+  <link href="assets/css/plugins/font-awesome.css" rel="stylesheet"/>
+  <link href="assets/css/plugins/iconfont.css" rel="stylesheet"/>
+  <link href="assets/assets/css/imageupload.css"  rel="stylesheet" />
+  <link href="assets/assets/css/president.css" rel="stylesheet"/>
+  
+</head>
+<body>
+     <div id="wrapper">
+ <div class="height-100v d-flex align-items-center justify-content-center">
+
+    <div id="div-authenticate" class="card border-success border-top-sm border-bottom-sm card-authentication1 mx-auto my-4 animated bounceInDown">
+		<div class="card-body">
+		 <div class="card-content p-2">
+		  <div class="card-title text-center py-3">
+              <span class="heading text-success">Prove as Owner</span> </div>
+		    <form id="proveOwner" autocomplete="off">
+                <div class="row">
+                    
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtOwnerUsername" class="sr-only">Username</label>
+                            <input type="text" id="txtOwnerUsername" class="form-control" placeholder="Username" name="OwnerUsername">
+                            <div class="form-control-position">
+                                <i class="fa fa-user"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtOwnerPassword" class="sr-only">Password</label>
+                            <input type="password" id="txtOwnerPassword" class="form-control" placeholder="Password" name="OwnerPassword">
+                            <!-- <div class="form-control-position">
+                                <i class="fa fa-lock"></i>
+                            </div> -->
+                            <div id="show_password_owner" class="form-control-position-right">
+                                <i onclick="show_password_owner()" class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="divWC" class="col-12 d-none">
+                        <label for="" class="text-danger">Wrong Credentials</label>
+                    </div>
+                    <div id="divA" class="col-12 d-none">
+                        <label for="" class="text-warning">Already Applied Please Wait!</label>
+                    </div>
+                    <div id="divP" class="col-12 d-none">
+                        <label for="" class="text-success">You are Already a President, what are you doing man</label>
+                    </div>
+             </div>
+             
+            <div class="row mt-3">
+                
+                <div class="col-sm-12">
+                    
+			        <button id="btnContinue" type="submit" class="btn btn-success btn-round waves-effect waves-light float-right">Continue</button>
+			        <a href="index.html" class="btn btn-outline-success btn-round waves-effect waves-light float-right mr-2">Cancel</a>
+                </div>
+            </div>
+            <div class="modal fade" id="checking" data-backdrop="static">
+                <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content animated fadeIn" style="background-color:transparent;border:none">
+                    
+                    <div class="modal-body" style="text-align:center">  
+                            <div class="spinner-grow" style="width: 5rem; height: 5rem;" role="status">
+                                    <span class="sr-only">checking...</span>
+                            </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+			 
+			 </form>
+		   </div>
+		  </div>
+    </div>
+
+	<div id="div-register" class="card border-primary border-top-sm border-bottom-sm card-authentication1 mx-auto my-4 animated bounceInDown d-none">
+		<div class="card-body">
+		 <div class="card-content p-2">
+		  <div class="card-title text-center py-3">
+              <span class="heading text-primary">Register as President</span></div>
+		    <form id="registerPresident" autocomplete="off">
+                <div class="row">
+                    <div class="col-sm-12">
+                        
+                        <div class="form-group">
+                        <div class="position-relative">
+                            <label for="exampleInputName" class="sr-only">Select Sector</label>
+                            <select class="form-control" id="drpSectors">
+                            </select>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtEmail" class="sr-only">Email</label>
+                            <input type="email" id="txtEmail" class="form-control" style="font-size: 12px;" placeholder="Email" name="email">
+                            <div class="form-control-position">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtName" class="sr-only">Name</label>
+                            <input type="text" id="txtName" class="form-control" placeholder="Name" name="name">
+                            <div class="form-control-position">
+                                <i class="fa fa-user"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtPhone" class="sr-only">Phone</label>
+                            <input type="text" id="txtPhone" class="form-control" placeholder="Phone" name="phone">
+                            <div class="form-control-position">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+			  
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtUsername" class="sr-only">Username</label>
+                            <input type="text" id="txtUsername" class="form-control" placeholder="Username" name="username">
+                            <div class="form-control-position">
+                                <i class="fa fa-user"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                        <div class="position-relative has-icon-right">
+                            <label for="txtPassword" class="sr-only">Password</label>
+                            <input type="password" id="txtPassword" class="form-control" placeholder="Password" name="password">
+                            <!-- <div class="form-control-position">
+                                <i class="fa fa-lock"></i>
+                            </div> -->
+                            <div id="show_password" class="form-control-position-right">
+                                <i onclick="show_password()" class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                 <div class="col-sm-6">
+                    <div class="img-container">
+                        <div id="AF-wrapper" class="img-wrapper">
+                        <div class="img-main">
+                            <img id="AF-img" style="background-size:cover" class="img-alt" src="" alt="" />
+                        </div>
+                        <div class="content1">
+                            <div class="img-icon">
+                            <img id="default" class="img-alt" style="width:100px;height:100px" src="assets/images/aadharFront.jpg" alt="" />
+                            </div>
+                            <div class="img-text">Aadhar Front </div>
+                        </div>
+                        <div id="AF-cancel" class="img-cancel">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="img-choose" id="choose-AF" style="cursor:pointer"><i class="fas fa-image m-auto"></i></div>
+                        </div>
+                        
+                         <input type="file" id="AF_choose" accept="image/*" hidden/>
+                        
+                    </div>
+                 </div>
+                 <div class="col-sm-6">
+                    <div class="img-container">
+                        <div id="AB-wrapper" class="img-wrapper">
+                        <div class="img-main">
+                            <img id="AB-img" style="background-size:cover" class="img-alt" src="" alt="" />
+                        </div>
+                        <div class="content1">
+                            <div class="img-icon">
+                            <img id="default" class="img-alt" style="width:100px;height:100px" src="assets/images/aadharBack.jpg" alt="" />
+                            </div>
+                            <div class="img-text">Aadhar Back </div>
+                        </div>
+                        <div id="AB-cancel" class="img-cancel">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="img-choose" id="choose-AB" style="cursor:pointer"><i class="fas fa-image m-auto"></i></div>
+                        </div>
+                        
+                         <input type="file" id="AB_choose" accept="image/*" hidden/>
+                        
+                    </div>
+                 </div>
+             </div>
+             <div class="form-group">
+                 <label id="images-error" class="error d-none" for="">Please upload Aadhar Card Images</label>
+             </div>
+
+			 
+            <div class="row mt-3">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="user-agree" name="agree" checked="" />
+                            <label for="user-agree">I agree <a href="./assets/docs/Terms and Conditions.pdf" target="_blank" class="text-primary">Term & Condition</a></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+			        <button id="btnRegister" type="submit" class="btn btn-primary btn-round waves-effect waves-light float-right">Register</button>
+			        <a href="index.html" class="btn btn-outline-primary btn-round waves-effect waves-light float-right mr-2">Cancel</a>
+                </div>
+            </div>
+            <div class="modal fade" id="saving" data-backdrop="static">
+                <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content animated fadeIn" style="background-color:transparent;border:none">
+                    
+                    <div class="modal-body" style="text-align:center">  
+                            <div class="spinner-grow" style="width: 5rem; height: 5rem;" role="status">
+                                    <span class="sr-only">saving...</span>
+                            </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+			 
+			 </form>
+		   </div>
+		  </div>
+    </div>
+	     </div>
+    
+     <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+	</div><!--wrapper-->
+	
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/select2.min.js"></script>
+  
+  <!--Sweet Alerts -->
+  <script src="assets/js/sweetalert.min.js"></script>
+  <script src="assets/js/sweet-alert-script.js"></script>
+  <!--Form Validatin Script-->
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/additional-methods.min.js"></script>
+  <script src="assets/js/moment.min.js"></script>
+
+  <script src="assets/assets/js/president.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from themezhub.net/rentup-live/rentup/home-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Oct 2021 18:49:35 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Themezhub" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Aspiring Homes</title><link rel="icon" href="../assets/img/icon3.jpg" type="image/x-icon">
+    <link href="assets/css/dashboard.css" rel="stylesheet"/>
+    <link href="../assets/css/plugins/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    
+    
+	<link href="../assets/plugins/datetimepicker/css/classic.css" rel="stylesheet" />
+	<link href="../assets/plugins/datetimepicker/css/classic.time.css" rel="stylesheet" />
+	<link href="../assets/plugins/datetimepicker/css/classic.date.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../assets/plugins/datetimepicker/css/bootstrap-material-datetimepicker.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <link href="../assets/css/styles.css" rel="stylesheet" />
+    
+  </head>
+
+  <body class="yellow-skin">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader"></div>
+
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+      <!-- ============================================================== -->
+      <!-- Top header  -->
+      <!-- ============================================================== -->
+      <!-- Start Navigation -->
+      <div class="header header-light">
+        <div class="container">
+          <nav id="navigation" class="navigation navigation-landscape">
+            <div class="nav-header">
+              <a class="nav-brand" href="#">
+                <img src="../assets/img/icon3.jpg" class="logo logoImg" alt="" />
+                 <span class="logoH text-success">A</span>spiring<span class="logoH">H</span>omes
+              </a>
+              <div class="nav-toggle"></div>
+              <div class="mobile_nav">
+                
+                <ul>
+                  <li id="user-img-mobile" class="d-none">
+                  <div class="btn-group account-drop p-0">
+                    <button type="button" class="btn btn-order-by-filt">
+                        <img src="http://localhost:5000/assets/images/defaults/user.jpg" class="userImg avater-img" alt="">
+                    </button>
+                  </div>
+                  
+                </li>
+                <li id="signbtn-mobile" class="add-listing">
+                  <a href="#" data-toggle="modal" data-target="#login" class="theme-cl">
+                    <i class="fas fa-sign-in-alt mr-1"></i>Sign In
+                  </a>
+                </li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-menus-wrapper" style="transition-property: none">
+              <span class='nav-menus-wrapper-user d-lg-none d-block'>
+                <span id="spanMobileUser" class="d-none">
+                  <div class="btn-group account-drop p-0 mr-2">
+                      <button type="button" class="btn btn-order-by-filt">
+                          <img src="http://localhost:5000/assets/images/defaults/user.jpg" class="userImg avater-img" alt="">
+                      </button>
+                    </div>
+                  <span id="spanNameMobile" class="" style="font-weight: 600;">Hi, Kunal Agarwal</span></span>
+                <span id="spanMobileDefault">
+                 <img src="../assets/img/icon3.jpg" class="logo logoImg" alt="" />
+                  <span class="logoH text-success">A</span>spiring<span class="logoH">H</span>omes</span>
+              </span> 
+              
+              <ul class="nav-menu user-nav-menu">
+                <li class="active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li id="findHomes"><a href="find/flats.html">Flats</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+
+              <ul class="nav-menu nav-menu-social align-to-right">
+                <!-- <li id="usernameli" class="_my_prt_list d-none">
+                  <a id="user-name" href="#">Hi, Daniel</a>
+                </li> -->
+                <li id="user-img" class="d-none">
+                  <a id="user-name" href="#">Hi, Daniel</a>
+                  <div class="btn-group account-drop p-0">
+                    <button type="button" class="btn btn-order-by-filt">
+                        <img id="user" src="http://localhost:5000/assets/images/defaults/user.jpg" class="avater-img" alt="">
+                    </button>
+                  </div>
+                  <ul id="user-menu" class="nav-dropdown nav-submenu">
+                    <!-- <li><a href="index-2.html">Home 1</a></li>
+                    <li><a href="home-2.html">Home 2</a></li>
+                    <li><a href="home-3.html">Home 3</a></li> -->
+                  </ul>
+                </li>
+                <li id="signbtn" class="add-listing">
+                  <a href="#" data-toggle="modal" data-target="#login" class="theme-cl">
+                    <i class="fas fa-sign-in-alt mr-1"></i>Sign In
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- End Navigation -->
+      <div class="clearfix"></div>
+      <!-- ============================================================== -->
+      <!-- Top header  -->
+      <!-- ============================================================== -->
+
+      <!-- ============================ Hero Banner  Start================================== -->
+      
+      <div class="row maincontainer">
+        <div class="col">
+          <div class="location d-none d-md-block">
+            <span id="sectorName"></span>
+            <span id="sectorId" hidden></span>
+          </div>
+          <div class="custom-tab style-1">
+								<ul class="nav nav-tabs pb-2 b-0" style="padding-left:400px" hidden id="myTab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="main-tab" data-toggle="tab" href="#mainbox" role="tab" aria-controls="mainbox" aria-selected="true">Main</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="result-tab" data-toggle="tab" href="#resultbox" role="tab" aria-controls="resultbox" aria-selected="false">Result</a>
+									</li>
+								</ul>
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="mainbox" role="tabpanel" aria-labelledby="home-tab">
+										<div class="choose_system">
+                        <div id="btn2" class="scanQR active2 floatset">&#9974;</div>
+                        <div id="btn1" class="typeNumber floatset">&#8230;</div>
+                      </div>
+                    <div id="main" class="main">
+                        <div class="boxNumber">
+                          <!-- scanner -->
+                          <div id="wrapper">
+                              <div class="card_parent d-flex align-items-center justify-content-center">
+                                <div class="card card_main card-authentication1 mx-auto my-4 animated bounceInDown">
+                                  <div class="card-body">
+                                  <div class="card-content p-2">
+                                    <div class="card-title text-center py-3">
+                                      <h2 class="heading">Scan QR</h2> </div>
+                                      <div class="scanner_parent">
+
+
+                                        <div id="divScannerStart" class="property_video scanner_main" style="cursor: pointer;">
+                                          <div class="thumb">
+                                            <div class="overlay_icon">
+                                              <div class="bb-video-box">
+                                                <div class="bb-video-box-inner">
+                                                  <div class="bb-video-box-innerup">
+                                                    <a href="#scan" class="theme-cl"><i class="ti-control-play"></i></a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div id="divScannerMain" class="scanner_main d-none">
+                                          <div class="scanner_border">
+                                            <div class="scanner_background">
+                                              <div class="scanner_slider"></div>
+                                            </div>
+                                            
+                                          </div>
+                                          <div id="divCloseScanner" class="scanner_close"><i class="fa fa-times"></i></div>
+                                          <video id="preview" class="video" autoplay="true"></video>
+
+                                        </div>
+                                                      
+                                          <button id="btnScanner" class="d-none">Start Scanner</button>
+                                          <button id="btnStop" class="d-none">Stop Scanner</button>
+                                      </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                  
+                                </div>
+                        </div>
+
+                        <div class="boxScanner">
+                            
+                            <div id="wrapper">
+                              <div class="card_parent d-flex align-items-center justify-content-center">
+                                <div class="card card_main card-authentication1 mx-auto my-4 animated bounceInDown">
+                                  <div class="card-body">
+                                  <div class="card-content p-2" style="min-height: 500px;">
+                                    <div class="card-title text-center py-3">
+                                      <h2 class="heading2">Verify through Vehicle Number</h2> </div>
+                                      <form id="verifyNumber">
+                                      <div class="row mt-5">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                            <div class="position-relative">
+                                                <input type="text" id="txtVehicleNumber" name="vnum" placeholder="Vehicle Number" class="dataVehicleNumber"/>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                          <button id="btnVerify" type="submit" class="btn btnVerify btn-round waves-effect waves-light float-right">Verify</button>
+                                        </div>
+                                      </div>
+                                      </form>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                  
+                                </div>
+                        </div>
+                    </div>
+                  </div>
+									<div class="tab-pane fade" id="resultbox" role="tabpanel" aria-labelledby="profile-tab">
+										
+                      <div id="wrapper">
+                        <div class="d-flex align-items-center justify-content-center">
+                                <div class="card card-result card-authentication1 mx-auto my-4 animated bounceInDown">
+                                  <div class="card-body">
+                                  <div class="card-content p-2" style="min-height: 500px;">
+                                    <div class="card-title text-center py-3">
+                                      <h2 class="heading">Booking Info</h2> </div>
+                                      <div class="row">
+                                        <div class="col-md-5">
+                                          <div class="qr-form">
+                                              <h1 class="nav-brand">
+                                                  <span class="logoH text-success">A</span>spiring<span class="logoH">H</span>omes
+                                              </h1>
+                                              <div class="qr">
+                                                  <div class="qrLogo">
+                                                      <img src="../assets/img/icon3.jpg">
+                                                  </div>
+                                                  <span id="scanned_bookingId" hidden>1</span>
+                                                  <span id="scanned_case" hidden>1</span>
+                                                  <h5 id="hQRname">Kunal Gupta</h5>
+                                                  <h5 id="hQRnumber">9306066540</h5>
+                                                  <h5 id="hQRvehicle">HR 77 1333</h5>
+                                                  <h3 id="hQRslot">A-R30-202</h3>
+                                                  <!-- <p>Show this QR code to enter the parking of your society to park your vehicle</p> -->
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            
+                                      <form id="bookSlot">
+                                                <div class="form-row">
+                                                  <div class="form-group col-md-12"><span class="spanFor">Type:</span> <span class="spanForValue text-uppercase" id="type">In</span></div>
+                                                  <div class="form-group col-md-12" id="case0">
+                                                    <!-- allotment/buffer in valid -->
+                                                    <!-- case 0,3 -->
+                                                    <span class="spanFor">Status:</span> 
+                                                    <span class="spanForValue text-uppercase" id="statusResult">valid</span>
+                                                  </div>
+                                                            
+                                                    <div class="form-group col-md-12 d-none" id="case1">
+                                                              <!-- allotment in before time -->
+                                                              <!-- <span class="spanFor">Status:</span> 
+                                                              <span class="spanForValue text-uppercase" id="statusResult">before time in arrival</span> -->
+                                                    </div>
+                                                    <div class="form-group col-md-12 d-none" id="case5">
+                                                      <!-- allotment out  to ask time in -->
+                                                        <!-- <span class="spanFor">Status:</span> 
+                                                        <span class="spanForValue text-uppercase" id="statusResult">valid</span> -->
+                                                        <label id="allotment_timeIn">TimeIn</label><label id="cancel_4">CANCEL</label>
+                                                        <input class="result form-control" type="text" name="timeIn" id="date-time-in" placeholder="Time In...">
+                                                    </div>
+                                                    <div class="form-group col-md-12 d-none" id="case3">
+                                                      <!-- buffer out ok -->
+                                                              <!-- <span class="spanFor">Status:</span> 
+                                                              <span class="spanForValue text-uppercase" id="statusResult">valid</span> -->
+                                                    </div>
+                                                    <div class="form-group col-md-12 d-none" id="case6">
+                                                      <!-- buffer out extra-charges -->
+                                                              <!-- <span class="spanFor">Status:</span> 
+                                                              <span class="spanForValue text-uppercase" id="statusResult">valid</span> -->
+                                                              <span class="spanFor">Amount To Charge:</span> 
+                                                              <span class="spanForValue text-uppercase" id="scanned_amount">$ 20</span>
+                                                    </div>
+                                                    <div class="form-group col-md-12 d-none" id="case4">
+                                                      <a href="" id="a_reuse" style="z-index: 9999;">re-use?</a>
+                                                    </div>
+                                                    <div class="form-group mt-2 col-lg-12 btnProceed col-md-12">
+                                                        <button id="btnProceed" class="btn btn-theme" type="submit">
+                                                            Proceed
+                                                        </button>
+                                                          
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </form>
+                                        </div>
+                                      </div>
+
+                                      <div class="scanNew">
+                                          <div id="btnScanNew" class="scanQR active2">&#8249;</div>
+                                      </div>
+
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                      </div>
+                              
+                    
+									</div>
+								</div>
+							</div>
+           
+        </div>
+      </div>
+      
+
+
+      
+      
+      <a id="back2Top" class="top-scroll" title="Back to top" href="#"
+        ><i class="ti-arrow-up"></i
+      ></a>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/ion.rangeSlider.min.js"></script>
+    <script src="../assets/js/select2.min.js"></script>
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/slider-bg.js"></script>
+    <script src="../assets/js/lightbox.js"></script>
+    <script src="../assets/js/imagesloaded.js"></script>
+    <script src="../assets/js/daterangepicker.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="assets/js/valid.js"></script>
+
+    
+    <!--Sweet Alerts -->
+    <script src="../assets/js/sweetalert.min.js"></script>
+    <script src="../assets/js/sweet-alert-script.js"></script>
+
+
+    <script src="../assets/assets/js/nav.js" ></script>
+    
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <script src="../assets/js/jquery.validate.min.js"></script>
+    
+    
+	<script src="../assets/plugins/datetimepicker/js/legacy.js"></script>
+	<script src="../assets/plugins/datetimepicker/js/picker.js"></script>
+	<script src="../assets/plugins/datetimepicker/js/picker.time.js"></script>
+	<script src="../assets/plugins/datetimepicker/js/picker.date.js"></script>
+    <script src="../assets/js/moment.min.js"></script>
+	<script src="../assets/plugins/datetimepicker/js/bootstrap-material-datetimepicker.min.js"></script>
+
+    
+    <script src="assets/js/dashboard.js"></script>
+    <script type="text/javascript">
+  
+
+  $("#btnScanner").click(function (e) { 
+      e.preventDefault();
+      console.log("in");
+      if(navigator.mediaDevices.getUserMedia){
+        navigator.mediaDevices.getUserMedia({video:true});
+      }
+      let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+      scanner.addListener('scan', function (content) {
+      var data = JSON.parse(content)
+          scannedResult(data);
+          //location.href = "http://pappuhandloom.com/index.html?user="+data.user+"&vehicle="+data.vehicle;
+          //alert(content);
+      });
+
+      Instascan.Camera.getCameras().then(function (cameras) {
+      if (cameras.length > 0) {
+       scanner.start(cameras[0]);
+          $('[name="options"]').on('change',function(){
+              if($(this).val()==1){
+                  if(cameras[0]!=""){
+                      scanner.start(cameras[0]);
+                  }else{
+                      alert('No Front camera found!');
+                  }
+              }else if($(this).val()==2){
+                  if(cameras[1]!=""){
+                      scanner.start(cameras[1]);
+                  }else{
+                      alert('No Back camera found!');
+                  }
+              }
+          });
+        $("#btnStop").click(function (e) { 
+          e.preventDefault();
+          scanner.stop();
+        });
+      } else {
+       console.error('No cameras found.');
+      }
+      }).catch(function (e) {
+        console.error(e);
+      });   
+    });
+  </script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+  </body>
+
+  <!-- Mirrored from themezhub.net/rentup-live/rentup/home-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Oct 2021 18:49:36 GMT -->
+</html>
