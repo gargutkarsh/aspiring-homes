@@ -1,14 +1,11 @@
 require('dotenv').config();
 const sql = require('mssql/msnodesqlv8')
 const config = {
-//   user: process.env.MSSQL_USER,
-//   password: process.env.MSSQL_PASS,
-//   database: process.env.MSSQL_DATABASE,
-//   server: process.env.MSSQL_SERVER,
-  user: "user_kunal",
-  password: "RamSita@13@",
-  database: "db_kunal",
-  server: "101.53.155.68",
+  user: process.env.MSSQL_USER,
+  password: process.env.MSSQL_PASS,
+  database: process.env.MSSQL_DATABASE,
+  server: process.env.MSSQL_SERVER,
+  
   pool: {
     max: 10,
     min: 0,
